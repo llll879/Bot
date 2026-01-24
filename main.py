@@ -1,4 +1,4 @@
-#import asyncio, sqlite3, logging, re, random, gf4
+import asyncio, sqlite3, logging, re, random, gf4
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
