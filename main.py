@@ -1,12 +1,16 @@
-#import asyncio, sqlite3, logging, random, re, g4f
+import asyncio, sqlite3, logging, random, re, g4f
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 from aiogram.types import LabeledPrice, PreCheckoutQuery
 
-# --- НАСТРОЙКИ ---
+# ОБЯЗАТЕЛЬНАЯ СТРОКА:
+logging.basicConfig(level=logging.INFO)
+
 API_TOKEN = '8418801272:AAG6KY8oRSdemGXhERo1vndcZTPdBvhUMLY'
-ADMIN_ID, DEV_ID = 8013668841, 7146168875
+ADMIN_ID = 8013668841
+DEV_ID = 7146168875
+
 
 logging.basicConfig(level=logging.INFO)
 bot, dp = Bot(token=API_TOKEN), Dispatcher()
